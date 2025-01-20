@@ -1,0 +1,165 @@
+/* General App Styles */
+.App {
+  text-align: center;
+  background: linear-gradient(to bottom right, #a8c0ff, #3f88c5); /* Soft gradient background with pastel tones */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font for better readability */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Slight scale effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Added shadow effect on hover for depth */
+}
+
+/* Logo Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styles */
+.App-header {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for a clean look */
+  backdrop-filter: blur(10px); /* Blur effect for modern UI */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #333; /* Dark grey for better contrast */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Header Title */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #4a4a4a; /* Dark grey for readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  letter-spacing: 1px; /* Slight spacing for a more spacious look */
+}
+
+/* Paragraph Styles */
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: #5f5f5f; /* Lighter grey text color for readability */
+  margin-top: 10px;
+}
+
+/* App Link Styles */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Change color on hover */
+  transform: translateY(-2px); /* Subtle upward movement on hover */
+}
+
+/* Border Effects */
+.App-header, .App-link {
+  border: 2px solid transparent;
+  border-radius: 12px;
+}
+
+.App-header:hover {
+  border-color: #61dafb; /* Border color change on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slight increase in shadow on hover */
+}
+
+.App-link:hover {
+  border-color: #21a1f1; /* Border color change on hover */
+  transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Button Styles */
+button {
+  background-color: #3f88c5; /* Soft blue button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #a8c0ff; /* Button hover background color */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+button:active {
+  transform: scale(1); /* Remove scale effect on click */
+}
+
+/* Input Fields */
+input {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white input fields */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #3f88c5; /* Focus border color */
+  box-shadow: 0 0 8px rgba(63, 136, 197, 0.5); /* Light shadow effect on focus */
+}
+
+input:hover {
+  border-color: #a8c0ff; /* Border color change on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 3vmin);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input {
+    width: 80%; /* Input fields take more width on smaller screens */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
